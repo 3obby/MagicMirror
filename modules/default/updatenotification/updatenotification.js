@@ -11,7 +11,7 @@ Module.register("updatenotification", {
 		ignoreModules: []
 	},
 
-	suspended: false,
+	suspended: true,
 	moduleList: {},
 
 	start() {

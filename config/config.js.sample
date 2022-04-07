@@ -38,6 +38,39 @@ let config = {
 	// true, force serveronly mode, because you want to.. no UI on this device
 
 	modules: [
+		//added
+		{
+			module: "MMM-Jast",
+			position: "top_left",
+			config: {
+				maxWidth: "100%",
+				updateIntervalInSeconds: 300,
+				fadeSpeedInSeconds: 3.5,
+				scroll: "vertical", // One of ["none", "vertical", "horizontal"]
+				useGrouping: false,
+				currencyStyle: "code", // One of ["code", "symbol", "name"]
+				lastUpdateFormat: "HH:mm",
+				showColors: true,
+				showCurrency: true,
+				showChangePercent: true,
+				showChangeValue: false,
+				showChangeValueCurrency: false,
+				showLastUpdate: false,
+				showPortfolioValue: false,
+				showPortfolioGrowthPercent: false,
+				showPortfolioGrowth: false,
+				numberDecimalsValues: 2,
+				numberDecimalsPercentages: 1,
+				virtualHorizontalMultiplier: 2,
+				stocks: [
+					{ name: "BASF", symbol: "BAS.DE", quantity: 10 },
+					{ name: "SAP", symbol: "SAP.DE", quantity: 15 },
+					{ name: "Henkel", symbol: "HEN3.DE" },
+					{ name: "Alibaba", symbol: "BABA"}
+				]
+			}
+		},
+		//default
 		{
 			module: "alert",
 		},
